@@ -14,7 +14,6 @@ export default function Hero() {
   });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "35%"]);
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.12]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
@@ -48,7 +47,7 @@ export default function Hero() {
 
       {/* Hero text */}
       <motion.div
-        style={{ y: textY, opacity }}
+        style={{ opacity }}
         className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-24 px-6 md:px-10 text-cream"
       >
         <p className="kicker mb-6 opacity-90">Slow living objects</p>
