@@ -51,7 +51,7 @@ export default function Hero() {
         className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-24 px-6 md:px-10 text-cream"
       >
         <p className="kicker mb-6 opacity-90">Slow living objects</p>
-        <h1 className="font-display italic text-hero leading-[0.9] max-w-[14ch]">
+        <h1 className="font-display italic text-[clamp(2.75rem,8.5vw,8.25rem)] leading-[0.92] max-w-[14ch]">
           <span className="block overflow-hidden">
             <RevealWords text="Handwoven" stagger={0.08} />
           </span>
